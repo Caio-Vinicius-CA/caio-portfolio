@@ -8,7 +8,11 @@ const Development = () => {
         Professional <span className="text-cyan-300">Development</span>
       </h1>
       <div className="w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-3 xl:gap-4 gap-10 items-center mt-16">
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="0"
+        >
           <DevCard
             image="/images/bb1.png"
             date="10 Nov 2025"
@@ -16,7 +20,11 @@ const Development = () => {
             entity="FUST"
           />
         </div>
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="100"
+        >
           {" "}
           <DevCard
             image="/images/bb2.png"
@@ -25,7 +33,11 @@ const Development = () => {
             entity="FUST"
           />
         </div>
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="200"
+        >
           {" "}
           <DevCard
             image="/images/bb3.png"

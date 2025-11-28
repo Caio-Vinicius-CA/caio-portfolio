@@ -10,7 +10,11 @@ const Projects = () => {
       </h1>
       <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
         {/* 1° Project */}
-        <div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="0"
+        >
           <Image
             alt="photo"
             src="/images/Sleek3.png"
@@ -24,7 +28,11 @@ const Projects = () => {
           <h1 className="pt-2 font-medium text-white/80">Apps, UI/UX</h1>
         </div>
         {/* 2° Project */}
-        <div>
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="100"
+        >
           <Image
             alt="photo"
             src="/images/Genesis3.png"
