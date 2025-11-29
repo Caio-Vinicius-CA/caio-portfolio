@@ -10,7 +10,8 @@ const Resume = () => {
         {/* EDUCATION PART */}
         <div>
           <h1 className="text-3xl sm:text-4xl font-bold  text-foreground dark:text-white text-center">
-            My <span className="text-[#42569d] dark:text-cyan-200">Education</span>
+            My{" "}
+            <span className="text-[#42569d] dark:text-cyan-200">Education</span>
           </h1>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 mt-20">
             <div data-aos="fade-right" data-aos-anchor-placement="top-center">

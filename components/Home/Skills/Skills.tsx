@@ -60,7 +60,9 @@ const Skills = () => {
                 data-aos-delay={i * 100}
                 className=" bg-[#14134145] text-center h-48 w-40 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105"
               >
-                <div className="text-5xl mb-4 text-gray-600 dark:text-gray-500">{skill.icon}</div>
+                <div className="text-5xl mb-4 text-gray-600 dark:text-gray-500">
+                  {skill.icon}
+                </div>
                 <p className="text-#[39436a] mt-1">{skill.name}</p>
                 <p className="text-2xl font-semibold">{skill.percentage}</p>
               </div>

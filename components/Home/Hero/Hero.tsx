@@ -27,7 +27,10 @@ const Hero = () => {
         >
           Creating web products, <br />
           brands
-          <span className="text-[#42569d] dark:text-cyan-200"> and experiences.</span>
+          <span className="text-[#42569d] dark:text-cyan-200">
+            {" "}
+            and experiences.
+          </span>
         </h1>
         <h2
           data-aos="fade-up"
