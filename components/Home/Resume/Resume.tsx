@@ -9,8 +9,8 @@ const Resume = () => {
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 gap-10">
         {/* EDUCATION PART */}
         <div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-white text-center">
-            My <span className="text-cyan-200">Education</span>
+          <h1 className="text-3xl sm:text-4xl font-bold  text-foreground dark:text-white text-center">
+            My <span className="text-[#42569d] dark:text-cyan-200">Education</span>
           </h1>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 mt-20">
             <div data-aos="fade-right" data-aos-anchor-placement="top-center">
@@ -27,7 +27,7 @@ const Resume = () => {
               data-aos-delay="100"
             >
               <ResumeCard
-                Icon={FaPython}
+                Icon={BiBadge}
                 role="Desenvolvimento Web Completo - Udemy"
                 date="141 horas"
               />
@@ -38,7 +38,7 @@ const Resume = () => {
               data-aos-offset="-200"
             >
               <ResumeCard
-                Icon={BiBadge}
+                Icon={FaPython}
                 role="Python 3 do básico ao avançado - Udemy"
                 date="120 horas"
               />

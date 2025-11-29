@@ -1,4 +1,5 @@
 "use client";
+import { LogoToggle } from "@/components/Helper/LogoToggle";
 import { NavLinks } from "@/constant/constant";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -27,18 +28,14 @@ const NavBar = ({ openNav }: Props) => {
   return (
     <div
       className={`transition-all ${
-        navBg ? "bg-[#0f142ed9] shadow-md" : "fixed"
+        navBg ? "bg-[#a8acbbd9] dark:bg-[#0f142ed9] shadow-md" : "fixed"
       } duration-200 h-[12vh] w-full z-1000 fixed`}
     >
       <div className="flex h-full w-[90%] mx-auto items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center flex-col">
-            <FaCode className="h-5 w-5 text-black" />
-          </div>
-          <h1 className="text-2xl hidden sm:block md:2xl text-white font-bold">
-            CAIO
-          </h1>
+          {/* Figure */}
+          <LogoToggle />
         </div>
         {/* NavLinks */}
         <div className="hidden lg:flex items-center space-x-10">
@@ -47,7 +44,7 @@ const NavBar = ({ openNav }: Props) => {
               <Link
                 key={link.id}
                 href={link.url}
-                className="text-base hover:text-cyan-300 text-white font-medium transition-all duration-200 "
+                className="text-base hover:text-cyan-300 text-foreground dark:text-white font-bold dark:font-medium transition-all duration-200 "
               >
                 <p>{link.label}</p>
               </Link>

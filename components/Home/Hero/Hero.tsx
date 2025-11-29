@@ -8,7 +8,7 @@ import ParticleBackground from "./ParticleBackground";
 
 const Hero = () => {
   return (
-    <div className="h-screen relative flex flex-col items-center justify-center text-white overflow-hidden">
+    <div className="h-screen relative flex flex-col items-center justify-center text-foreground dark:text-white overflow-hidden">
       <ParticleBackground />
 
       <div className="z-10 relative flex flex-col items-center">
@@ -17,7 +17,7 @@ const Hero = () => {
           alt="heroimage"
           height={150}
           width={150}
-          className="rounded-full border-8 border-[#0c0c48aa]"
+          className="rounded-full border-8 border-[#a8acbbd9]"
           data-aos="fade-up"
         ></Image>
         <h1
@@ -27,7 +27,7 @@ const Hero = () => {
         >
           Creating web products, <br />
           brands
-          <span className="text-cyan-200"> and experiences.</span>
+          <span className="text-[#42569d] dark:text-cyan-200"> and experiences.</span>
         </h1>
         <h2
           data-aos="fade-up"
@@ -35,7 +35,7 @@ const Hero = () => {
           className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center"
         >
           Hi! I&apos;m Caio - A Passionate&nbsp;{" "}
-          <span className="text-cyan-200 font-bold">
+          <span className="text-[#42569d] dark:text-cyan-200 font-bold">
             <Typewriter
               options={{
                 strings: [
@@ -57,8 +57,8 @@ const Hero = () => {
           data-aos-delay="600"
           className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium"
         >
-          <span>See my work</span>
-          <BsArrowRight className="h-5 w-5 ml-2 inline-block" />
+          <span className="text-white">See my work</span>
+          <BsArrowRight className="h-5 w-5 ml-2 inline-block text-white" />
         </button>
       </div>
     </div>

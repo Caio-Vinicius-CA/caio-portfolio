@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+/* No Tailwind 4, definimos as variáveis de tema aqui.
+  O :root é o tema claro (padrão).
+  O .dark define as cores quando o tema escuro está ativo.
+*/
+
+@theme {
+    --color-background: #F7F7F7;
+    --color-foreground: #1A1A1A;
+}
+
+/* Sobrescreve para o modo escuro */
+@variant dark (&:where(.dark, .dark *));
+
+
+/* Opcional: Estilos globais usando as variáveis */
+:root {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+
+.dark {
+    --color-background: #0d0d1f;
+    --color-foreground: #ededed;
+}
