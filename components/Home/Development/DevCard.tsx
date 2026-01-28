@@ -16,12 +16,12 @@ const DevCard = ({ image, date, title, entity }: Props) => {
         src={image}
         width={500}
         height={500}
-        className="object-cover"
+        className="object-cover min-h-[250px] border border-gray-300 rounded-sm"
       />
       <p className="mt-1 text-gray-400 font-medium text-base sm:text-sm">
         {date}
       </p>
-      <h1 className="mt-0.5 text-lg sm:text-xl font-bold text-gray-400 dark:text-white hover:underline hover:text-[#42569d] hover:dark:text-cyan-200 cursor-pointer transition-all duration-300">
+      <h1 className="mt-0.5 text-lg sm:text-xl font-bold text-gray-400 dark:text-white hover:underline hover:text-[#42569d] hover:dark:text-cyan-200 transition-all duration-300">
         {title}
       </h1>
       <h1 className="-mt-0.5 text-lg font-bold text-gray-300">{entity}</h1>

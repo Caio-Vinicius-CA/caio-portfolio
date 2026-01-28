@@ -19,6 +19,7 @@ const Resume = () => {
                 Icon={FaBookReader}
                 role="Sistemas de informação - UNINASSAU"
                 date="Jan 2021 - Dez 2026"
+                desc="Graduação com foco em desenvolvimento de software, bancos de dados, análise de sistemas, fundamentos de dados e tecnologia aplicada à resolução de problemas do mundo real."
               />
             </div>
 
@@ -31,6 +32,7 @@ const Resume = () => {
                 Icon={BiBadge}
                 role="Desenvolvimento Web Completo - Udemy"
                 date="141 horas"
+                desc="Curso aprofundado de desenvolvimento web que engloba HTML, CSS, JavaScript, TypeScript, React e Next.js, com projetos práticos, melhores práticas e desenvolvimento front-end moderno."
               />
             </div>
             <div
@@ -42,6 +44,7 @@ const Resume = () => {
                 Icon={FaPython}
                 role="Python 3 do básico ao avançado - Udemy"
                 date="120 horas"
+                desc="Curso de Python que abrange fundamentos de programação, estruturas de dados, automação, manipulação de arquivos e projetos práticos para fortalecer as habilidades de resolução de problemas e codificação."
               />
             </div>
           </div>

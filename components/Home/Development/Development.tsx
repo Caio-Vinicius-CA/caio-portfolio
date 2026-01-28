@@ -15,6 +15,7 @@ const Development = () => {
           data-aos-delay="0"
           data-aos-offset="-100"
         >
+          {/* Card 1 */}
           <DevCard
             image="/images/FUST.png"
             date="10 Nov 2025"
@@ -28,12 +29,12 @@ const Development = () => {
           data-aos-delay="100"
           data-aos-offset="-100"
         >
-          {" "}
+          {/* Card 2 */}
           <DevCard
-            image="/images/bb2.png"
-            date="10 Nov 2025"
-            title="Lorem ipsum dolor sit ametaaaaaaaaaaaaaa"
-            entity="FUST"
+            image="/images/Akad.jpg"
+            date="17 Dez 2025"
+            title="Introdução ao Desenvolvimento FullStack com a Akad"
+            entity="DIO"
           />
         </div>
         <div
@@ -42,12 +43,12 @@ const Development = () => {
           data-aos-delay="200"
           data-aos-offset="-100"
         >
-          {" "}
+          {/* Card 3 */}
           <DevCard
-            image="/images/bb3.png"
-            date="10 Nov 2025"
-            title="Lorem ipsum dolor sit ametaaaaaaaaaaaaaa"
-            entity="FUST"
+            image="/images/Project1.png"
+            date="12 Jan 2026"
+            title="Iniciado projeto de Sistema de Gestão Financeira"
+            entity="Privado"
           />
         </div>
       </div>

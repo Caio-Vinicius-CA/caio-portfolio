@@ -20,7 +20,7 @@ const Contact = () => {
             <div className="flex items-center space-x-3 mb-4">
               <BiEnvelope className="w-9 h-9 text-[#42569d] dark:text-cyan-200" />
               <p className="text-md font-bold text-gray-400">
-                81 9&thinsp;91468272
+                (81) 9&thinsp;9146-8272
               </p>
             </div>{" "}
             {/* Email */}
