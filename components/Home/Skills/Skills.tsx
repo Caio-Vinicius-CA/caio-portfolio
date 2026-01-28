@@ -17,6 +17,11 @@ const skills = [
     percentage: "89",
   },
   {
+    name: "TypeScript",
+    icon: <SiTypescript />,
+    percentage: "89",
+  },
+  {
     name: "React JS",
     icon: <SiReact />,
     percentage: "92",
@@ -36,18 +41,13 @@ const skills = [
     icon: <SiTailwindcss />,
     percentage: "94",
   },
-  {
-    name: "TypeScript",
-    icon: <SiTypescript />,
-    percentage: "86",
-  },
 ];
 
 const Skills = () => {
   return (
     <div className="text-gray-600 dark:text-white pt-16 pb-30">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-foreground dark:text-white">
-        My <span className="text-[#42569d] dark:text-cyan-200">Skills</span>
+        Minhas <span className="text-[#42569d] dark:text-cyan-200">Skills</span>
       </h1>
       <div className="flex flex-wrap justify-center gap-6 mt-16">
         {skills.map((skill, i) => {

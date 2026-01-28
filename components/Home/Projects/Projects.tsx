@@ -5,8 +5,8 @@ const Projects = () => {
   return (
     <div className="pt-16 pb-16">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-foreground dark:text-white">
-        A small selection of recent <br />
-        <span className="text-[#42569d] dark:text-cyan-200">projects</span>
+        Uma pequena seleção de <br /> <span className="text-[#42569d] dark:text-cyan-200">Projetos</span> recentes
+        
       </h1>
       <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
         {/* 1° Project */}

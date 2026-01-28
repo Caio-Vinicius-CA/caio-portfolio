@@ -8,31 +8,33 @@ const Contact = () => {
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Text Content */}
         <div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground dark:text-gray-200">
-            Schedulle a call with me, to solve your problems
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground dark:text-gray-200 -mb-3">
+            Entre em{" "}
+            <span className="text-[#42569d] dark:text-cyan-200">Contato</span>{" "}
+            comigo para resolver seus problemas
           </h1>
           <p className="text-gray-400 mt-6 text-base sm:text-lg">
-            Reach out to me today and let&apos;s discuss how I can help you
-            achieve your goals.
+            Entre em contato hoje mesmo e vamos discutir como posso ajudá-lo a
+            alcançar seus objetivos.
           </p>
           <div className="mt-7">
             {/* Phone */}
             <div className="flex items-center space-x-3 mb-4">
-              <BiEnvelope className="w-9 h-9 text-[#42569d] dark:text-cyan-200" />
+              <BiEnvelope className="w-9 h-9 text-blue-950/60 dark:text-cyan-200" />
               <p className="text-md font-bold text-gray-400">
                 (81) 9&thinsp;9146-8272
               </p>
             </div>{" "}
             {/* Email */}
             <div className="flex items-center space-x-3 mb-4">
-              <BiEnvelope className="w-9 h-9 text-[#42569d] dark:text-cyan-200" />
+              <BiEnvelope className="w-9 h-9 text-blue-950/60 dark:text-cyan-200" />
               <p className="text-md font-bold text-gray-400">
                 amaralvinicaio.2003@gmail.com
               </p>
             </div>
             {/* Map */}
             <div className="flex items-center space-x-3 mb-4">
-              <BiEnvelope className="w-9 h-9 text-[#42569d] dark:text-cyan-200" />
+              <BiEnvelope className="w-9 h-9 text-blue-950/60 dark:text-cyan-200" />
               <p className="text-md font-bold text-gray-400">
                 Recife, Pernambuco
               </p>
@@ -63,25 +65,25 @@ const Contact = () => {
         >
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Nome"
             className=" px-4 py-3.5 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
           />
           <input
             type="email"
-            placeholder="Email address"
+            placeholder="Email"
             className=" px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
           />
           <input
             type="text"
-            placeholder="Phone number"
+            placeholder="Telefone"
             className=" px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
           />
           <textarea
-            placeholder="Your message"
-            className=" px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70 h-40"
+            placeholder="Sua mensagem"
+            className="resize-none px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70 h-40"
           ></textarea>
           <button className="mt-8 px-12 py-4 bg-[#39436a] dark:bg-blue-950 hover:bg-blue-950 hover:dark:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full">
-            Send message
+            Enviar mensagem
           </button>
         </div>
       </div>

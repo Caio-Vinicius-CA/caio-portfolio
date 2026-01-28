@@ -23,13 +23,13 @@ const Hero = () => {
         <h1
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl mt-6 text-center font-bold tracking-wide"
         >
-          Creating web products, <br />
-          brands
+          Desenvolvendo produtos digitais, <br />
+          marcas
           <span className="text-[#42569d] dark:text-cyan-200">
             {" "}
-            and experiences.
+            e experiências.
           </span>
         </h1>
         <h2
@@ -37,7 +37,7 @@ const Hero = () => {
           data-aos-delay="400"
           className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center"
         >
-          Hi! I&apos;m Caio - A Passionate&nbsp;{" "}
+          Olá! Eu sou Caio - &thinsp;
           <span className="text-[#42569d] dark:text-cyan-200 font-bold">
             <Typewriter
               options={{
@@ -60,7 +60,7 @@ const Hero = () => {
           data-aos-delay="600"
           className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-lg font-medium"
         >
-          <span className="text-white">See my work</span>
+          <span className="text-white">Veja meus trabalhos</span>
           <BsArrowRight className="h-5 w-5 ml-2 inline-block text-white" />
         </button>
       </div>

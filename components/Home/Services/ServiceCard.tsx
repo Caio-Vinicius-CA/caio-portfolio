@@ -31,7 +31,7 @@ const ServiceCard = ({ icon, name, description }: Props) => {
         // Opcional: Adiciona 'object-fit' se o SVG tiver proporções estranhas
         style={{ objectFit: "contain" }}
       />
-      <h1 className="mt-6 text-xl md:text-2xl font-bold text-foreground dark:text-gray-200">
+      <h1 className="mt-6 min-h-[63px] text-xl md:text-2xl font-bold text-foreground dark:text-gray-200">
         {name}
       </h1>
       <p className="mt-6 text-foreground dark:text-gray-300">{description}</p>
