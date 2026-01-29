@@ -25,12 +25,13 @@ const Hero = () => {
           data-aos-delay="200"
           className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl mt-6 text-center font-bold tracking-wide"
         >
-          Desenvolvendo produtos digitais, <br />
-          marcas
+          Desenvolvendo{" "}
           <span className="text-[#42569d] dark:text-cyan-200">
             {" "}
-            e experiências.
+            experiências digitais
           </span>
+          , <br />
+          marcas e produtos.
         </h1>
         <h2
           data-aos="fade-up"

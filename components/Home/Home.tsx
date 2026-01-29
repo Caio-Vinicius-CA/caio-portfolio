@@ -27,13 +27,27 @@ const Home = () => {
 
   return (
     <div className="overflow-hidden">
-      <Hero />
-      <Services />
-      <Resume />
-      <Projects />
-      <Skills />
-      <Development />
-      <Contact />
+      <div id="inicio">
+        <Hero />
+      </div>
+      <div id="servicos">
+        <Services />
+      </div>
+      <div id="formacoes">
+        <Resume />
+      </div>
+      <div id="projetos">
+        <Projects />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="desenvolvimento">
+        <Development />
+      </div>
+      <div id="contato">
+        <Contact />
+      </div>
     </div>
   );
 };

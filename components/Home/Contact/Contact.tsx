@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useRef } from "react"; // 1. Importe o useRef
+import emailjs from "@emailjs/browser"; // 2. Importe a biblioteca
 import { BiEnvelope } from "react-icons/bi";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-const Contact = () => {
+const Contact: React.FC = () => {
+  const form = useRef<HTMLFormElement | null>(null); // 3. Crie a referência para o formulário
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Substitua os IDs abaixo pelos seus IDs reais do painel do EmailJS
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        form.current as HTMLFormElement,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+      .then(
+        () => {
+          alert("Mensagem enviada com sucesso!");
+          form.current?.reset(); // Limpa o formulário após o envio
+        },
+        (error: unknown) => {
+          let msg: string;
+          if (typeof error === "string") msg = error;
+          else if (
+            typeof error === "object" &&
+            error !== null &&
+            "text" in error
+          ) {
+            const maybeText = (error as Record<string, unknown>)["text"];
+            msg = typeof maybeText === "string" ? maybeText : String(error);
+          } else msg = String(error);
+          alert("Erro ao enviar: " + msg);
+        },
+      );
+  };
+
   return (
     <div className="pt-16 pb-16">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -57,35 +92,47 @@ const Contact = () => {
           </div>
         </div>
         {/* Form */}
-        <div
+        {/* Formulário Ajustado */}
+        <form
+          ref={form}
+          onSubmit={sendEmail}
           data-aos="zoom-in"
-          data-aos-anchor-placement="top-center"
-          data-aos-delay="0"
           className="md:p-10 p-5 bg-blue-950/80 dark:bg-[#131332] rounded-lg"
         >
           <input
             type="text"
+            name="from_name"
             placeholder="Nome"
-            className=" px-4 py-3.5 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
+            required
+            className="px-4 py-3.5 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
           />
           <input
             type="email"
+            name="reply_to"
             placeholder="Email"
-            className=" px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
+            required
+            className="px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
           />
           <input
             type="text"
+            name="phone"
             placeholder="Telefone"
-            className=" px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
+            className="px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70"
           />
           <textarea
+            name="message"
             placeholder="Sua mensagem"
+            required
             className="resize-none px-4 py-3.5 mt-6 bg-[#26255345] text-white outline-none rounded-md w-full placeholder:text-white/70 h-40"
           ></textarea>
-          <button className="mt-8 px-12 py-4 bg-[#39436a] dark:bg-blue-950 hover:bg-blue-950 hover:dark:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full">
+
+          <button
+            type="submit" // Garanta que o botão seja do tipo submit
+            className="mt-8 px-12 py-4 bg-[#39436a] dark:bg-blue-950 hover:bg-blue-950 hover:dark:bg-blue-900 transition-all duration-300 cursor-pointer text-white rounded-full"
+          >
             Enviar mensagem
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );

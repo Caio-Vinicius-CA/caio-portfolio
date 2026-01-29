@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-/* No Tailwind 4, definimos as variáveis de tema aqui.
+html {
+    scroll-behavior: smooth;
+}
+
+/* No Tailwind, definimos as variáveis de tema aqui.
   O :root é o tema claro (padrão).
   O .dark define as cores quando o tema escuro está ativo.
 */
