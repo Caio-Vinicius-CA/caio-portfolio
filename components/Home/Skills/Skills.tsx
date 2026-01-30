@@ -12,34 +12,52 @@ import Tilt from "react-parallax-tilt";
 
 const skills = [
   {
-    name: "JavaScript",
+    id: "js_ts",
+    name: (
+      <>
+        JavaScript
+        <br />
+        TypeScript
+      </>
+    ),
     icon: <SiJavascript />,
-    percentage: "89",
+    percentage: "Avançado",
   },
   {
-    name: "TypeScript",
-    icon: <SiTypescript />,
-    percentage: "89",
-  },
-  {
-    name: "React JS",
+    id: "react",
+    name: (
+      <>
+        ReactJS
+        <br />
+        React Native
+      </>
+    ),
     icon: <SiReact />,
-    percentage: "92",
+    percentage: "Avançado",
   },
   {
-    name: "Next.js",
+    id: "next",
+    name: <>NextJS</>,
     icon: <SiNextdotjs />,
-    percentage: "90",
+    percentage: "Avançado",
   },
   {
-    name: "Node.js",
+    id: "node",
+    name: <>NodeJs</>,
     icon: <SiNodedotjs />,
-    percentage: "86",
+    percentage: "Intermediário",
   },
   {
-    name: "Tailwind CSS",
+    id: "python",
+    name: <>Python</>,
     icon: <SiTailwindcss />,
-    percentage: "94",
+    percentage: "Intermediário",
+  },
+  {
+    id: "java",
+    name: <>Java</>,
+    icon: <SiTypescript />,
+    percentage: "Básico",
   },
 ];
 
@@ -52,19 +70,19 @@ const Skills = () => {
       <div className="flex flex-wrap justify-center gap-6 mt-16">
         {skills.map((skill, i) => {
           return (
-            <Tilt key={skill.name} scale={1.2} transitionSpeed={400}>
+            <Tilt key={skill.id} scale={1.2} transitionSpeed={400}>
               <div
                 data-aos="flip-right"
                 data-aos-anchor-placement="top-center"
                 data-aos-offset="-200"
                 data-aos-delay={i * 100}
-                className=" bg-[#14134145] text-center h-48 w-40 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105"
+                className=" bg-[#14134145] text-center h-48 w-40 rounded-3xl flex flex-col items-center justify-center shadow-lg transition hover:scale-105 cursor-default"
               >
                 <div className="text-5xl mb-4 text-gray-600 dark:text-gray-500">
                   {skill.icon}
                 </div>
-                <p className="text-#[39436a] mt-1">{skill.name}</p>
-                <p className="text-2xl font-semibold">{skill.percentage}</p>
+                <p className="text-#[39436a] mt-1 leading-none">{skill.name}</p>
+                <p className="text-lg font-bold">{skill.percentage}</p>
               </div>
             </Tilt>
           );
